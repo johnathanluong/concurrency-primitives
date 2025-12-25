@@ -38,7 +38,7 @@ public:
       try
       {
         test.test_function(); 
-        std::cout << "[     OK ]" << test.name << std::endl;
+        std::cout << "[     OK ] " << test.name << std::endl;
         ++passed;
       }
       catch(const std::exception& e)
