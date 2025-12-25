@@ -1,12 +1,12 @@
-#ifndef SPINLOCKC11_HPP
-#define SPINLOCKC11_HPP
+#ifndef SPINLOCKCPP11_HPP
+#define SPINLOCKCPP11_HPP
 
 #include <atomic>
 #include <thread>
 
 // This class implements a spinlock without the use of C++20 atomic_flag operations
 // It will less performant as we will be using a busy wait to check for lock_ state
-class SpinlockC11
+class SpinlockCPP11
 {
 public:
   // When function returns, the lock is guaranteed to be owned by the current thread
@@ -32,4 +32,4 @@ private:
   std::atomic_flag lock_{};
 };
 
-#endif // !SPINLOCKC11_HPP
+#endif // !SPINLOCKCPP11_HPP

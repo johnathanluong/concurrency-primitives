@@ -1,9 +1,7 @@
-#include "includeHelper.hpp"
-#include <iostream>
+#include "tests/TestRunner.hpp"
 
 int main()
 {
-  std::cout << "hey" << std::endl;  
-
+  TestRunner::Instance().run_all();
   return 0;
 }

@@ -14,7 +14,8 @@ target_include_directories(concurrency-primitives INTERFACE
 
 add_executable(test
   src/main.cpp
-  tests/test_spinlockC11.cpp
+  # Tests
+  tests/test_spinlockCPP11.cpp
 )
 target_link_libraries(test PRIVATE
   concurrency-primitives
