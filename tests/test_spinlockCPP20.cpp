@@ -1,11 +1,11 @@
-#include "primitives/SpinlockCPP11.hpp"
+#include "primitives/SpinlockCPP20.hpp"
 #include "tests/TestRunner.hpp"
 #include <cassert>
 #include <thread>
 
-void test_spinlockCPP11()
+void test_spinlockCPP20()
 {
-  SpinlockCPP11 spinlock;
+  SpinlockCPP20 spinlock;
   int resource = 0;
   constexpr int rounds = 1000;
 
@@ -36,4 +36,4 @@ void test_spinlockCPP11()
   assert(resource == kExpected);
 }
 
-TEST("Test SpinlockCPP11", test_spinlockCPP11);
+TEST("Test SpinlockCPP20", test_spinlockCPP20);

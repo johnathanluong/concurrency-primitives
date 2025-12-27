@@ -17,6 +17,7 @@ add_executable(test
   # Tests
   tests/test_TestRunner.cpp
   tests/test_spinlockCPP11.cpp
+  tests/test_spinlockCPP20.cpp
 )
 target_link_libraries(test PRIVATE
   concurrency-primitives
